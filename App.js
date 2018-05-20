@@ -10,12 +10,14 @@ export default class MyApp extends Component {
   render() {
     return (
       <View>
-        <Component1 welcome='hello' />
+        
         <Component2 />
-        <Component3 />
+        
       </View>
     );
   }
 }
-
+//removing unwanted components
+//<Component3 />
+//<Component1 welcome='hello' />
 AppRegistry.registerComponent('MyApp', () => MyApp);

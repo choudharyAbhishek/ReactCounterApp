@@ -25,14 +25,14 @@ export default class Component2 extends Component {
         return (
             <View>
                 <View style={styles.body}>
-                    <Text style={styles.text}>This is a counter</Text>
+                    <Text style={styles.text}>Counter</Text>
                 </View>
                 <View style={styles.container}>
-                    <TouchableHighlight style={styles.v1} onPress={this.onPressV1} underlayColor='white'>
+                    <TouchableOpacity style={styles.v1} onPress={this.onPressV1} underlayColor='white'>
                         <View>
                             <Text style={styles.text}>+</Text>
                         </View>
-                    </TouchableHighlight>
+                    </TouchableOpacity>
 
                     <View style={styles.v2}>
 
@@ -52,10 +52,10 @@ export default class Component2 extends Component {
 }
 const styles = StyleSheet.create({
     body: {
-        backgroundColor: 'yellow'
+        backgroundColor: 'lavender'
     },
     text: {
-        color: 'black',
+        color: 'indigo',
         fontSize: 30,
         fontWeight: 'bold',
         textAlign: 'center'
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     },
     v1: {
         flex: 1,
-        backgroundColor: 'green',
+        backgroundColor: 'lightgreen',
         padding: 10
     },
     v2: {
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
     },
     v3: {
         flex: 1,
-        backgroundColor: 'red',
+        backgroundColor: 'lightpink',
         padding: 10
     }
 });
